@@ -37,3 +37,16 @@ This project is an **Obstacle Avoiding Robot** built using an **Arduino Uno**, a
 #define MRb 7         // Right Motor B
 #define PWMPin 10     // Motor speed control via PWM
 **
+
+Core Logic:
+If distance > 15 cm → Move forward with speed ramp-up and ramp-down
+
+If obstacle < 10 cm:
+
+Stop
+
+Sweep servo to check for path
+
+Move back slowly
+
+Turn left slightly
